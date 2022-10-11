@@ -1,0 +1,99 @@
+Release Notes -- Apache PDFBox -- Version 2.0.24
+
+Introduction
+------------
+
+The Apache PDFBox library is an open source Java tool for working with PDF documents.
+
+This is an incremental bugfix release based on the earlier 2.0.23 release. It contains
+a couple of fixes and small improvements.
+
+For more details on these changes and all the other fixes and improvements
+included in this release, please refer to the following issues on the
+PDFBox issue tracker at https://issues.apache.org/jira/browse/PDFBOX.
+
+Bug
+
+[PDFBOX-5051] - Slow rendering for specific PDF file
+[PDFBOX-5134] - Very slow rendering on PageDrawer.shadingFill
+[PDFBOX-5135] - Glyphs missed in rendering
+[PDFBOX-5137] - Wrong classification of an JPEG image leading to a blank image added to a pdf document
+[PDFBOX-5138] - Embedded files not extracted from PDF files with multilevel EmbeddedFiles tree
+[PDFBOX-5150] - 3.0.0-RC1: PDComboBox.setValue() throws IllegalArgumentException: /DA is a required entry
+[PDFBOX-5151] - Issue with COSObjectKey::fixGeneration
+[PDFBOX-5155] - Error extracting text from PDF - Can't read the embedded Type1 font FDFBJU+NewsGothic
+[PDFBOX-5156] - Error in identification of PDF comment symbol % as a token separator with PDF names
+[PDFBOX-5163] - Stack overflow when reading a corrupt dictionary
+[PDFBOX-5168] - dash pattern [0] should be invisible
+[PDFBOX-5175] - Behaviour change in 2.0.20 due to use of IOUtils.populateBuffer in SecurityHandler.prepareAESInitializationVector leading to IOException for certain PDF
+[PDFBOX-5176] - java.io.IOException: Page tree root must be a dictionary
+[PDFBOX-5180] - Snapshot Deploy not working
+[PDFBOX-5187] - TSAClient with username+password
+[PDFBOX-5188] - COSOutputStream.flush doesn't call super
+[PDFBOX-5190] - BaseParser: stack overflow when reading a corrupt pdf
+[PDFBOX-5191] - isEmbeddingPermitted() is too restrictive on TTFs with OS2 table versions 0-2
+[PDFBOX-5192] - Wild rendering when repeating truetype glyph flag is outside of range
+[PDFBOX-5193] - v2.0.22 and v3.0.0-RC1 PDF Debugger app crashes with java.lang.NullPointerException
+[PDFBOX-5194] - CreateCheckBox example draws too large, clipped checkmark
+[PDFBOX-5196] - Wrong color space detected for some Jpeg images
+[PDFBOX-5199] - Possible memory leak after calling decode filter
+[PDFBOX-5204] - Ink annotation not rendered
+
+Improvement
+
+[PDFBOX-5093] - Pass PDFRenderer to PDFPrintable constructor
+[PDFBOX-5141] - Create tests for HelloWorld examples
+[PDFBOX-5145] - Faster PDImageXObject.applyMask
+[PDFBOX-5154] - Custom folder for fonts in FontMapper
+[PDFBOX-5157] - allow to make timestamp only signature "LTV"
+[PDFBOX-5164] - Create portable collection PDF
+[PDFBOX-5177] - Optimize memory footprint of PDFObjectStreamParser
+[PDFBOX-5183] - Add getter/setter for suppressDuplicateOverlappingText in PDFMarkedContentExtractor
+[PDFBOX-5200] - Cache PageTree in PDFPrintable
+[PDFBOX-5201] - Add Adobe Illustrator COSNames
+[PDFBOX-5208] - Make constructors of CIDSystemInfo and PDPanoseClassification public
+
+Wish
+
+[PDFBOX-5198] - When merging multiple pdf ua documents, Tags become nested
+
+Task
+
+[PDFBOX-5133] - Failing testFlattenPDFBox2469Filled on Ubuntu
+[PDFBOX-5184] - Add test for PDFMarkedContentExtractor class
+[PDFBOX-5186] - Create test for CreateGradientShadingPDF
+
+Release Contents
+----------------
+
+This release consists of a single source archive packaged as a zip file.
+The archive can be unpacked with the jar tool from your JDK installation.
+See the README.txt file for instructions on how to build this release.
+
+The source archive is accompanied by a SHA512 checksum and a PGP signature
+that you can use to verify the authenticity of your download.
+The public key used for the PGP signature can be found at
+https://www.apache.org/dist/pdfbox/KEYS.
+
+About Apache PDFBox
+-------------------
+
+Apache PDFBox is an open source Java library for working with PDF documents.
+This project allows creation of new PDF documents, manipulation of existing
+documents and the ability to extract content from documents. Apache PDFBox
+also includes several command line utilities. Apache PDFBox is published
+under the Apache License, Version 2.0.
+
+For more information, visit https://pdfbox.apache.org/
+
+About The Apache Software Foundation
+------------------------------------
+
+Established in 1999, The Apache Software Foundation provides organizational,
+legal, and financial support for more than 100 freely-available,
+collaboratively-developed Open Source projects. The pragmatic Apache License
+enables individual and commercial users to easily deploy Apache software;
+the Foundation's intellectual property framework limits the legal exposure
+of its 2,500+ contributors.
+
+For more information, visit https://www.apache.org/
